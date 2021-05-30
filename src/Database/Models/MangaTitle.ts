@@ -23,7 +23,7 @@ export default class MangaTitle extends BaseEntity {
     public static async addFromParsedResult(parsedData: IParseResult[]) {
         await Promise.all(parsedData.map(async p => {
             const timingParsed = new TimingParsed();
-            timingParsed.raring = p.rating;
+            timingParsed.rating = p.rating;
             timingParsed.views = p.views;
             timingParsed.votes = p.votes;
             timingParsed.date = new Date();

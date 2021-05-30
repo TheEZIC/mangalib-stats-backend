@@ -7,7 +7,7 @@ export default class TimingParsed extends BaseEntity {
     id: number;
 
     @Column("float")
-    raring: number;
+    rating: number;
 
     @Column("int")
     votes: number;
